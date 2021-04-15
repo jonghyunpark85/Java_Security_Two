@@ -1,0 +1,10 @@
+//First "grant" commented out (code from main has no permissions to access input.txt)...
+//grant codeBase "file:/root/java/AccessControl/Intersect/main/*" {
+//	permission java.io.FilePermission "/root/java/AccessControl/IntersectDoPriv/input.txt", "read";
+//};
+
+//DON'T FORGET TO EDIT THE PATHS BELOW TO THE FILE LOCATIONS ON YOUR OWN COMPUTER!
+grant codeBase "file:../other/*" {
+	permission java.io.FilePermission "../input.txt", "read";
+};
+

@@ -1,0 +1,7 @@
+Run in the "main" directory:
+
+java -cp .:../other/ReadFile.jar -Djava.security.manager -Djava.security.policy=sec.pol TestMe
+
+
+
+Note: don't forget to edit the paths in sec.pol so they point to the correct file locations on your computer.

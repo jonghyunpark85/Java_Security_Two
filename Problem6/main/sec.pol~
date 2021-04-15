@@ -1,0 +1,8 @@
+grant codeBase "file:/root/java/AccessControl/Intersect/main/*" {
+	permission java.io.FilePermission "/root/java/AccessControl/Intersect/input.txt", "read,write";
+};
+
+grant codeBase "file:/root/java/AccessControl/Intersect/other/*" {
+	permission java.io.FilePermission "/root/java/AccessControl/Intersect/input.txt", "read";
+};
+

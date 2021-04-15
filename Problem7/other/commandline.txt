@@ -1,0 +1,7 @@
+To rebuild the ReadFile.jar file:
+
+jar cf ReadFile.jar MyPackage/*.class
+
+(Don't forget to rebuild the .java file under MyPackage first...)
+
+Note: don't forget to change the file path in TestClass under MyPackage to point correctly to your copy of input.txt.

